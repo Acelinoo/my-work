@@ -1,0 +1,21 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-data {
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    width: 500px;
+    background-color: gray;
+    margin-top: 150px;
+    /* height: 400px; */
+}

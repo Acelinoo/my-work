@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Data Mahasiswa</title>
+</head>
+
+<body style="font-family: Arial, sans-serif; background-color: #1A2B34; margin: 0; padding: 0; color: #FFFFFF;">
+
+    <div style="max-width: 600px; margin: 50px auto; padding: 20px; background-color: #2F4750; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); border-radius: 10px;">
+        <h2 style="text-align: center; color: #4FD1C5; margin-bottom: 20px;">Form Data Mahasiswa</h2>
+        <form id="dataForm" action="">
+            <hr style="border: 1px solid #4FD1C5; margin-bottom: 20px;">
+            <table style="width: 100%; border-spacing: 10px;">
+                <tr>
+                    <td style="color: #FFFFFF; font-weight: bold;">Nama Anda:</td>
+                </tr>
+                <tr>
+                    <td><input type="text" id="nama" style="width: 100%; padding: 10px; background-color: #1A2B34; border: 1px solid #4FD1C5; border-radius: 5px; color: #FFFFFF;"></td>
+                </tr>
+                <tr>
+                    <td style="color: #FFFFFF; font-weight: bold;">Jenis Kelamin:</td>
+                </tr>
+                <tr>
+                    <td>
+                        <label><input value="pria" type="radio" name="gender" style="margin-right: 5px;">Pria</label>
+                        <label><input value="wanita" type="radio" name="gender" style="margin-left: 15px; margin-right: 5px;">Wanita</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="color: #FFFFFF; font-weight: bold;">Hobi:</td>
+                </tr>
+                <tr>
+                    <td>
+                        <label><input type="checkbox" name="hobi" value="Game" style="margin-right: 5px;">Game</label>
+                        <label><input type="checkbox" name="hobi" value="Musik" style="margin-left: 15px; margin-right: 5px;">Musik</label>
+                        <label><input type="checkbox" name="hobi" value="Traveling" style="margin-left: 15px; margin-right: 5px;">Traveling</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="color: #FFFFFF; font-weight: bold;">Agama:</td>
+                </tr>
+                <tr>
+                    <td>
+                        <select name="agama" id="agama" style="width: 100%; padding: 10px; background-color: #1A2B34; border: 1px solid #4FD1C5; border-radius: 5px; color: #FFFFFF;">
+                            <option value="" selected disabled>Pilih Agama</option>
+                            <option value="Islam">Islam</option>
+                            <option value="Hindu">Hindu</option>
+                            <option value="Budha">Budha</option>
+                            <option value="Katolik">Katolik</option>
+                            <option value="Protestan">Protestan</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="color: #FFFFFF; font-weight: bold;">Asal Sekolah:</td>
+                </tr>
+                <tr>
+                    <td><input type="text" id="as" style="width: 100%; padding: 10px; background-color: #1A2B34; border: 1px solid #4FD1C5; border-radius: 5px; color: #FFFFFF;"></td>
+                </tr>
+                <tr>
+                    <td style="color: #FFFFFF; font-weight: bold;">Keterangan:</td>
+                </tr>
+                <tr>
+                    <td><textarea name="keterangan" id="keterangan" rows="5" style="width: 100%; padding: 10px; background-color: #1A2B34; border: 1px solid #4FD1C5; border-radius: 5px; color: #FFFFFF;"></textarea></td>
+                </tr>
+                <tr>
+                    <td style="text-align: center; padding-top: 20px;">
+                        <button type="button" onclick="validateForm()" style="background-color: #4FD1C5; color: #1A2B34; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; font-weight: bold; transition: background-color 0.3s;">
+                            Submit
+                        </button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+    <script>
+        function validateForm() {
+            const nama = document.getElementById('nama').value;
+            if (!nama) {
+                alert('Nama harus diisi!');
+            } else {
+                alert('Form berhasil dikirim!');
+            }
+        }
+    </script>
+</body>
+
+</html>

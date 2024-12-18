@@ -1,0 +1,30 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-data {
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    width: 500px;
+    background-color: gray;
+    height: 400px;
+}
+
+h2 {
+    margin-top: -50px;
+}
+
+hr {
+    margin-bottom: 50px;
+    margin-left: -30px;
+    width: 120%;
+}
